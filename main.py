@@ -13,6 +13,7 @@ def main():
     movietags = soup.select('td.titleColumn')
     movietag0 = movietags[0]
     moviesplit = movietag0.text.split()
+    year = moviesplit[-1]
     
     print(moviesplit)
     
